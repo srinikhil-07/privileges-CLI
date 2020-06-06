@@ -29,7 +29,8 @@ Build both XPC helper and privileges CLI tool.
 3. Fot help after installing : privilege --help
 4. To remove admin privilege for an user: privilege --user Test --admin false
 5. To get admin rights for an user: privilege --user Test --admin true
-6. Security check for XPC in file ConnectionVerifier.swift can be replaced with relevant information.
+6. Security check for XPC in file ConnectionVerifier.swift should be replaced with 
+relevant code sign information.
 
 ## Future Scope
 - [ ] This tool can be extended to other privlege operations while staying as user,
