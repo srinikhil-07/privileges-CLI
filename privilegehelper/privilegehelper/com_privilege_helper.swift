@@ -93,12 +93,17 @@ class PrivilegeListener: NSObject, NSXPCListenerDelegate, ListenerProtocol {
     }
     /// Method to listen to XPC requests
     /// - Warning: Requests should be checked for code sign here before processing
+    /// https://wojciechregula.blog/post/learn-xpc-exploitation-part-2-say-no-to-the-pid/
     func listener(_ listener: NSXPCListener, shouldAcceptNewConnection newConnection: NSXPCConnection) -> Bool {
         logger.info("Request to listner recieved")
-        newConnection.exportedInterface = NSXPCInterface.init(with: ListenerProtocol.self)
-        newConnection.exportedObject = self
-        newConnection.resume()
-        return true
+        if ConnectionVerifier.isValid(connection: newConnection) {
+            newConnection.exportedInterface = NSXPCInterface.init(with: ListenerProtocol.self)
+            newConnection.exportedObject = self
+            newConnection.resume()
+            return true
+        }
+        logger.critical("Security check for the request failed")
+        return false
    }
 }
 /// Extending the listener

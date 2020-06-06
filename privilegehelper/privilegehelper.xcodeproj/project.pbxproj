@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B700C48248B907B001A8CC7 /* ConnectionVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B700C45248B907B001A8CC7 /* ConnectionVerifier.swift */; };
+		0B700C49248B907B001A8CC7 /* AuditTokenHack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B700C47248B907B001A8CC7 /* AuditTokenHack.m */; };
+		0B700C4B248B9138001A8CC7 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B700C4A248B9138001A8CC7 /* constants.swift */; };
 		0B962F4B248B23BD00A86103 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B962F4A248B23BD00A86103 /* main.swift */; };
 		0B962F57248B23E900A86103 /* bridger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B962F54248B23E900A86103 /* bridger.m */; };
 		0B962F58248B23E900A86103 /* com_privilege_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B962F55248B23E900A86103 /* com_privilege_helper.swift */; };
@@ -27,6 +30,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B700C45248B907B001A8CC7 /* ConnectionVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionVerifier.swift; sourceTree = "<group>"; };
+		0B700C46248B907B001A8CC7 /* AuditTokenHack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuditTokenHack.h; sourceTree = "<group>"; };
+		0B700C47248B907B001A8CC7 /* AuditTokenHack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuditTokenHack.m; sourceTree = "<group>"; };
+		0B700C4A248B9138001A8CC7 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		0B962F47248B23BD00A86103 /* com.privilege.helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.privilege.helper; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B962F4A248B23BD00A86103 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0B962F51248B23E800A86103 /* privilegehelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "privilegehelper-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -68,6 +75,9 @@
 		0B962F49248B23BD00A86103 /* privilegehelper */ = {
 			isa = PBXGroup;
 			children = (
+				0B700C46248B907B001A8CC7 /* AuditTokenHack.h */,
+				0B700C47248B907B001A8CC7 /* AuditTokenHack.m */,
+				0B700C45248B907B001A8CC7 /* ConnectionVerifier.swift */,
 				0B962F53248B23E900A86103 /* bridger.h */,
 				0B962F54248B23E900A86103 /* bridger.m */,
 				0B962F55248B23E900A86103 /* com_privilege_helper.swift */,
@@ -75,6 +85,7 @@
 				0B962F4A248B23BD00A86103 /* main.swift */,
 				0B962F51248B23E800A86103 /* privilegehelper-Bridging-Header.h */,
 				0B962F5F248B2FED00A86103 /* privilegehelper.h */,
+				0B700C4A248B9138001A8CC7 /* constants.swift */,
 			);
 			path = privilegehelper;
 			sourceTree = "<group>";
@@ -146,6 +157,9 @@
 			files = (
 				0B962F58248B23E900A86103 /* com_privilege_helper.swift in Sources */,
 				0B962F59248B23E900A86103 /* com_privilege_protocol.swift in Sources */,
+				0B700C49248B907B001A8CC7 /* AuditTokenHack.m in Sources */,
+				0B700C4B248B9138001A8CC7 /* constants.swift in Sources */,
+				0B700C48248B907B001A8CC7 /* ConnectionVerifier.swift in Sources */,
 				0B962F4B248B23BD00A86103 /* main.swift in Sources */,
 				0B962F57248B23E900A86103 /* bridger.m in Sources */,
 			);
