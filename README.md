@@ -1,5 +1,5 @@
 # PrivilegesCLI
-A CLI tool to switch admin privileges for macOS. This is inspired from SAP's Privileges app. 
+A CLI tool to switch admin privileges for macOS. This is inspired from SAP's Privileges app https://github.com/SAP/macOS-enterprise-privileges. 
 
 ## About
 This repository aims to build a CLI only tool to switch/toggle admin privileges.
@@ -22,9 +22,9 @@ This repository's goals are as follows:
 
 ## Usage
 Build both XPC helper and privileges CLI tool. 
-1. Build byrunnning ./build.sh build
-2. Install the tool by sudo ./build.sh install
-3. To get tool help and usage information : privilege --help
+1. To build the tool: ./build.sh build
+2. To install the tool: sudo ./build.sh install
+3. Fot help after installing : privilege --help
 4. To remove admin privilege for an user: privilege --user Test --admin false
 5. To get admin rights for an user: privilege --user Test --admin true
 
