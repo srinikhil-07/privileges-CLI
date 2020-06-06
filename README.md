@@ -11,14 +11,16 @@ This repository's goals are as follows:
 3. The code should be fully in Swift,
 4. Use Apple's new Argument Parser library,
 5. Use Apple's swift-log for logging
+6. XPC in high privilege should be secure. Audit token check from https://github.com/securing/SimpleXPCApp 
+has been implemented.
 
 ## TODO
 - [x] Add Apple's collaboration framework to XPC daemon and check if its daemon safe,
 - [x] In client, add Apple's argument parser Swift package to parse CLI arguments,
 - [x] Test the functionality
 - [x] Automated build, install and uninstall 
-- [ ] Add security to XPC daemon
-- [ ] Toogle for n minutes like in SAP's app.
+- [x] Add security to XPC daemon
+- [ ] Toggle for 'n' minutes like in SAP's app.
 
 ## Usage
 Build both XPC helper and privileges CLI tool. 
@@ -27,12 +29,7 @@ Build both XPC helper and privileges CLI tool.
 3. Fot help after installing : privilege --help
 4. To remove admin privilege for an user: privilege --user Test --admin false
 5. To get admin rights for an user: privilege --user Test --admin true
-
-## Deployment 
-
-1. Add your sign in build.sh
-2. The CLI, XPC and build.sh can be zipped and "sudo ./buid.sh install" can be used to deploy,
-3. To remove this tool "sudo ./build.sh uninstall" can be deployed on users
+6. Security check for XPC in file ConnectionVerifier.swift can be replaced with relevant information.
 
 ## Future Scope
 - [ ] This tool can be extended to other privlege operations while staying as user,
