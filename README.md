@@ -2,7 +2,7 @@
 A CLI tool to switch admin privileges for macOS. This is inspired from SAP's Privileges app https://github.com/SAP/macOS-enterprise-privileges. 
 
 ## About
-This repository aims to build a CLI only tool to switch/toggle admin privileges.
+This repository contains a CLI only tool to switch/toggle admin privileges.
 
 ## Goals
 This repository's goals are as follows:
